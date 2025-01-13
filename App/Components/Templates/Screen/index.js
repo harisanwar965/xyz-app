@@ -1,28 +1,29 @@
-import { ScrollView, View, SafeAreaView, StatusBar } from 'react-native';
-import useStyles from './styles';
-import React from 'react';
-import { Colors } from 'Theme';
+import { ScrollView, View, SafeAreaView, StatusBar } from "react-native";
+import useStyles from "./styles";
+import React from "react";
+import { Colors } from "Theme";
 
-const Screen = props => {
+const Screen = (props) => {
   const { children } = props;
 
   const { root, rootScroll } = useStyles();
 
   return (
     <>
-      <StatusBar backgroundColor={Colors.primary} />
+      <StatusBar backgroundColor={Colors.background} />
 
       <SafeAreaView
         style={{
-          backgroundColor: Colors.primary
+          backgroundColor: Colors.background,
         }}
       />
 
       <ScrollView
         {...props}
-        keyboardShouldPersistTaps={'handled'}
+        keyboardShouldPersistTaps={"handled"}
         contentInsetAdjustmentBehavior="automatic"
-        style={rootScroll}>
+        style={rootScroll}
+      >
         <View style={root}>{children}</View>
       </ScrollView>
     </>

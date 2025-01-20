@@ -4,17 +4,17 @@ import React from "react";
 import { Colors } from "Theme";
 
 const Screen = (props) => {
-  const { children } = props;
+  const { children, viewStyle } = props;
 
   const { root, rootScroll } = useStyles();
 
   return (
     <>
-      <StatusBar backgroundColor={Colors.background} />
+      <StatusBar backgroundColor={Colors.transparent} />
 
       <SafeAreaView
         style={{
-          backgroundColor: Colors.background,
+          backgroundColor: Colors.transparent,
         }}
       />
 
@@ -24,7 +24,7 @@ const Screen = (props) => {
         contentInsetAdjustmentBehavior="automatic"
         style={rootScroll}
       >
-        <View style={root}>{children}</View>
+        <View style={[root, { ...viewStyle }]}>{children}</View>
       </ScrollView>
     </>
   );

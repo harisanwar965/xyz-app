@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import useStyles from './styles';
-import { SplashScreen, WelcomeScreen, UserScreen } from '@Views';
-import { Appbar } from '@Organisms';
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import useStyles from "./styles";
+import { SplashScreen, WelcomeScreen, LoginScreen, HomeScreen } from "@Views";
+import { Appbar } from "@Organisms";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,7 +23,8 @@ const StackNavigator = () => {
           component={WelcomeScreen}
           {...headerHidden}
         />
-        <Stack.Screen name="User" component={UserScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} {...headerHidden} />
+        <Stack.Screen name="Home" component={HomeScreen} {...headerHidden} />
       </Stack.Navigator>
     </NavigationContainer>
   );

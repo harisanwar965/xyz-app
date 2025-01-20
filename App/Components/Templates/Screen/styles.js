@@ -8,11 +8,12 @@ const useStyles = () =>
   StyleSheet.create({
     rootScroll: {
       flexGrow: 1,
-      backgroundColor: Colors.background,
+      // backgroundColor: Colors.background,
     },
     root: {
       flex: 1,
-      height: responsiveHeight(100),
+      height: responsiveHeight(110),
+      backgroundColor: "yellow",
     },
   });
 

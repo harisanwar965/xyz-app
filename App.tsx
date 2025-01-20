@@ -4,6 +4,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { store } from '@Redux';
 import { PaperProvider } from 'react-native-paper';
 import { theme } from './App/Theme';
+import { View } from 'react-native';
 
 const App: React.FC = () => {
   return (

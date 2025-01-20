@@ -4,24 +4,25 @@ import { DefaultTheme } from "react-native-paper";
 export const Colors = {
   // Common
   transparent: "rgba(0,0,0,0)",
-  text: "#3f3f3f",
+  text: "#171717",
   tintGrey: "#777b",
   foreground: "#FFFFFF",
   background: "#450A0D",
   success: "#28a745",
   error: "#dc3545",
-
+  border: "#E8EAED",
   primary: "teal",
   secondary: "green",
+  grey: "#83899B",
 };
 
 /*  APP SPECIFIC FONTS  */
 export const FontFamily = {
-  Bold: "SofiaPro-Bold",
-  SemiBold: "SofiaPro-SemiBold",
-  Medium: "SofiaPro-Medium",
-  Regular: "SofiaPro",
-  Light: "SofiaPro-Light",
+  Bold: "Lato-Bold",
+  SemiBold: "Lato-SemiBold",
+  Medium: "Lato-Medium",
+  Regular: "Lato-Regular",
+  Light: "Lato-Light",
 };
 
 /*  REACT NATIVE PAPER THEME  */
